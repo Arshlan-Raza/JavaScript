@@ -21,3 +21,20 @@ console.log(c);
 let d =  'arshlan';
 
 console.log(d);   
+
+
+// loop
+for(let i = 0 ; i < 5 ; i++){
+
+    console.log('Arshlan'+i);
+
+}
+
+
+let x = 0;
+
+while ( x < 6 ){
+
+    console.log(x);
+    ++x;
+}
