@@ -75,11 +75,11 @@ let parts = message.split(' ');
 console.log(arr.sort());
 
 
-let numberss = [1, -2,-1, 4,-9,8];
 
-let filterd = numberss.filter(num => num>=0) ;
 
-console.log(filterd);
+
+
+// console.log(filterd);
 
 
 let nu = [4,5,6,7,8];
@@ -91,9 +91,9 @@ let items = nu.map(num=>'student'+num);
 console.log(items);
 
 
-let item = filterd .map(function(num){
+let numberss = [1, -2, -1, 4, -9, 8];
+let item = numberss
+  .filter(num => num >= 0)
+  .map(num => ({ value: num })); 
 
-        return {value: num};
-
-})
 console.log(item);
