@@ -50,7 +50,7 @@ const myHonda = {
   console.log(newCar);
 
 
-  let arr = [10 , 21 , 24 , 43 , 53];
+  let arr = [43 , 53 , 10 , 21 , 24 ];
 
 //   for(let value of arr) {
 
@@ -68,6 +68,20 @@ let joined  = arr.join(',');
 
 console.log(joined);   
 
+let message = 'This is learning of javaScript';
+
+let parts = message.split(' ');
+
+console.log(arr.sort());
 
 
+let numberss = [1, -2,-1, 4,-9,8];
 
+let filterd = numberss.filter(function(num){
+
+    return num>=0
+
+})
+
+
+console.log(filterd);
