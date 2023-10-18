@@ -48,3 +48,26 @@ const myHonda = {
   const newCar = myCar.slice(0, 2);
 
   console.log(newCar);
+
+
+  let arr = [10 , 21 , 24 , 43 , 53];
+
+//   for(let value of arr) {
+
+//     console.log(value);
+
+//   }
+
+arr.forEach (number=>
+
+    console.log(number)
+    
+);
+
+let joined  = arr.join(',');
+
+console.log(joined);   
+
+
+
+
