@@ -30,3 +30,35 @@ function createSquare(side) {
 }
 
 let squareObj1 = createSquare(5);
+
+
+
+let src = {
+
+    a:3,
+    b:5,
+    c:10,
+
+};
+
+
+
+// let dest = {};
+
+// for(let key in src){
+
+//     dest[key] = src[key];
+
+// }
+
+
+
+
+// let dest = Object.assign({},src);
+
+//  let destObj = dest;
+
+
+let dest = {...src};
+
+let destobj1 = dest;
