@@ -23,3 +23,28 @@ let cour = course.find(function(course){
 
 
 console.log(cour);
+
+let num = [1,2 ,3,4,5,6,7];
+
+num.pop();
+
+console.log(num);
+
+num.shift();
+
+console.log(num);
+
+num.splice(2,1);
+
+console.log(num);
+
+
+const myHonda = {
+    color: "red",
+    wheels: 4,
+    engine: { cylinders: 4, size: 2.2 },
+  };
+  const myCar = [myHonda, 2, "cherry condition", "purchased 1997"];
+  const newCar = myCar.slice(0, 2);
+
+  console.log(newCar);
