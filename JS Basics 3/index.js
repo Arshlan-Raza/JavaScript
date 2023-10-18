@@ -77,11 +77,23 @@ console.log(arr.sort());
 
 let numberss = [1, -2,-1, 4,-9,8];
 
-let filterd = numberss.filter(function(num){
-
-    return num>=0
-
-})
-
+let filterd = numberss.filter(num => num>=0) ;
 
 console.log(filterd);
+
+
+let nu = [4,5,6,7,8];
+
+console.log(nu);
+
+let items = nu.map(num=>'student'+num);
+
+console.log(items);
+
+
+let item = filterd .map(function(num){
+
+        return {value: num};
+
+})
+console.log(item);
