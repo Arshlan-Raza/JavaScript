@@ -60,7 +60,7 @@ let person = {
 
     
 try{
-
+   
     
 person.fullName = true;
 
