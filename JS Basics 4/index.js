@@ -30,8 +30,9 @@
 
 // console.log(ans);
 
-function sum (...args){
+function sum (num,value,...args){ // here num = 1, value = 2 ..args (this should be the last parameter)
     console.log(args);
 }
 
 sum(1,2,3,4,5,6);
+
