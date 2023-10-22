@@ -46,11 +46,30 @@ let person = {
     },
 
     set fullName(value){
-        let parts = value.split('');
+        if(typeof value !== String){
+            throw new Error("You have not sent a string");
+        }
+        let parts = value.split(' ');
         this.fName = parts[0];
         this.lName = parts[1];
     }
     
 };
 
+// console.log(person.fullName);
+
+
+try{
+
+    
+person.fullName = true;
+
+}
+catch(e){
+
+    alert(e);
+
+}
+
 console.log(person.fullName);
+
