@@ -77,7 +77,42 @@
 
                 // 2.Assign 
 
-let src = {value : 10,assign : 20}
+// let src = {value : 10,assign : 20}
 
-let dest = object.assign({},src)
+// let dest = Object.assign({},src)
+
+                // 3.spread 
+
+// let src = {value : 10,assign : 20}
+
+// let dest 
+
+// dest = {...src}
+
+        // playing with string  
+
+
+// let firstName = 'Arshlan'
+// console.log (firstName)
+
+// let firstName = {
+//     name : new String ('Arshlan')
+// }
+
+
+// let obj = firstName
+// console.log(obj.name)    
+
+                        // playing with string  
+            
+// let numbers = [ 1, 2, 3, 4 , 5 ]
+
+// // numbers.push(6)
+
+// // numbers.unshift(0)
+
+// numbers.splice(3,0,9,10,11,12)
+
+
+            // searching with callback function  
 
