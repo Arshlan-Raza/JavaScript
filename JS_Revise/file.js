@@ -116,3 +116,39 @@
 
             // searching with callback function  
 
+// let courses = [ 
+
+//     {no:1 , naam : 'Arshlan'},
+//     {no:2 , naam : 'Raza'}
+
+// ]
+
+// let answ  = courses.find(course => course.naam === 'Arshlan')
+
+
+// console.log (answ)
+
+// let first = [1,2,3]
+// let second = [4,5]
+
+// let combine =first.concat(second)
+
+// console.log(combine)
+
+// function checkingIf(){
+//     console.log ('what are you doing')
+// }
+
+// console.log (checkingIf())
+
+// let person = {
+//     fName : 'Arsh',
+//     lName : 'Raza'
+// }
+
+// console.log('${person.fName}')
+
+
+            // DOM + MODERN JS 
+
+
