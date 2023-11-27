@@ -40,7 +40,7 @@ let element = document.querySelector('#wrapper');
 
 element.addEventListener('click',function(event){
 
-    if(event.target.nodeName  === 'SPAN'){
+    if(event.target.nodeName  === 'PARA'){
 
      console.log('span pr click kia hai' +  event.target.texContent);
 
