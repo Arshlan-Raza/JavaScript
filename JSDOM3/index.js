@@ -50,7 +50,7 @@ function addPara() {
     para.textContent = 'Js is single'
     document.body.appendChild(para);
 }
-
+ 
 
 function addNewMessage() {
     let para = document.createElement('p');
