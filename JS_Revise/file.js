@@ -152,3 +152,20 @@
             // DOM + MODERN JS 
 
 
+// let content = document.querySelector('.para')
+
+// content.addEventListener('click', function(){
+//         content.style.cssText = 'background-color:green'
+// })
+
+
+let doc = document.querySelector('#wrapper')
+
+doc.addEventListener('click',function(event){
+
+        if(event.target.nodeName === 'SPAN'){
+                
+                console.log('You clicked on span tag '+ event.target.textContent);
+
+        }
+});
