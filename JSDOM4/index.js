@@ -97,32 +97,33 @@
 
 // utility();
 
-async function helper(){
+// async function helper(){
 
-    let options = {
-        method: 'POST',
-        body: JSON.stringify({
-          title: 'Arshlan',
-          body: 'Tagdi',
-          userId: 2003,
-          weight: 81,
-        }),
-        headers: {
-          'Content-type': 'application/json; charset=UTF-8',
-        },
-    };
+//     let options = {
+//         method: 'POST',
+//         body: JSON.stringify({
+//           title: 'Arshlan',
+//           body: 'Tagdi',
+//           userId: 2003,
+//           weight: 81,
+//         }),
+//         headers: {
+//           'Content-type': 'application/json; charset=UTF-8',
+//         },
+//     };
         
-        let content = await fetch('https://jsonplaceholder.typicode.com/posts',options);
-        let response = content.json();
-        return response ;
+//         let content = await fetch('https://jsonplaceholder.typicode.com/posts',options);
+//         let response = content.json();
+//         return response ;
 
-}
+// }
 
-async function utility(){
+// async function utility(){
 
-    let ans = await helper();
-    console.log(ans);
+//     let ans = await helper();
+//     console.log(ans);
 
-}
+// }
 
-utility();
+// utility();
+
