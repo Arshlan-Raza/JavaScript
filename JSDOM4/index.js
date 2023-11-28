@@ -63,22 +63,66 @@
 // }
 
 // console.log(abcd());
+// async function utility(){
+
+//     let jharkhandMausam = new Promise ((resolve,reject) => {
+//         setTimeout(() => {
+//             resolve('Jharkhand me bahut thand hai')
+//         }, 1000);
+//     });
+    
+//     let delhiMausam = new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve('Delhi me bahut grmi hai')
+//         }, 5000);
+//     });
+    
+//     let jM = await jharkhandMausam;
+//     let dM = await delhiMausam;
+
+//     return [jM,dM];
+// }
+
+// let obj = {
+//     heading:"head"
+// };
+
+// async function utility(){
+
+//     let content = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+//     let output = await content.json();
+//     console.log(output);
+
+// }
+
+// utility();
+
+async function helper(){
+
+    let options = {
+        method: 'POST',
+        body: JSON.stringify({
+          title: 'Arshlan',
+          body: 'Tagdi',
+          userId: 2003,
+          weight: 81,
+        }),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+    };
+        
+        let content = await fetch('https://jsonplaceholder.typicode.com/posts',options);
+        let response = content.json();
+        return response ;
+
+}
+
 async function utility(){
 
-    let jharkhandMausam = new Promise ((resolve,reject) => {
-        setTimeout(() => {
-            resolve('Jharkhand me bahut thand hai')
-        }, 1000);
-    });
-    
-    let delhiMausam = new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve('Delhi me bahut grmi hai')
-        }, 5000);
-    });
-    
-    let jM = await jharkhandMausam;
-    let dM = await delhiMausam;
+    let ans = await helper();
+    console.log(ans);
 
-    return [jM,dM];
 }
+
+utility();
