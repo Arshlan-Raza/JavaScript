@@ -45,21 +45,21 @@
 // document.body.appendChild(fragment); // 1 reflow and 1 repaint (performance is increased )
 
 
-function addPara() {
-    let para = document.createElement('p');
-    para.textContent = 'Js is single'
-    document.body.appendChild(para);
-}
+// function addPara() {
+//     let para = document.createElement('p');
+//     para.textContent = 'Js is single'
+//     document.body.appendChild(para);
+// }
  
 
-function addNewMessage() {
-    let para = document.createElement('p');
-    para.textContent = 'kya haal chaal'
-    document.body.appendChild(para);
-}
+// function addNewMessage() {
+//     let para = document.createElement('p');
+//     para.textContent = 'kya haal chaal'
+//     document.body.appendChild(para);
+// }
 
 
-addPara();
-addNewMessage();
+// addPara();
+// addNewMessage();
 
 
