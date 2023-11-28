@@ -1,4 +1,15 @@
 
+
+// sync();
+
+// console.log('second');
+
+
+setTimeout(function(){
+    console.log('third');
+},3000)
+
+
 function sync() { 
 
     console.log('first');
@@ -6,5 +17,4 @@ function sync() {
 
 sync();
 
-console.log('second');
-
+console.log('second')
