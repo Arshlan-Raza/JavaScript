@@ -169,3 +169,10 @@ doc.addEventListener('click',function(event){
 
         }
 });
+
+
+let btn = document.querySelector(".btn");
+
+btn.addEventListener('click',() =>{
+        alert("You have clicked the button");
+});
