@@ -1,4 +1,9 @@
 .spectacular{
     color: aqua;
     font-size: 50px;
+    transform: translateX(20px) rotate(360deg);
+}
+
+.title-container{
+    transition:all 0.5s ease-in-out ;
 }
