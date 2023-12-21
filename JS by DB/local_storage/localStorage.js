@@ -23,4 +23,4 @@ localStorage.setItem("todos",JSON.stringify(todoList));
 
 const retrieve = localStorage.getItem("todos");
 
-console.log(JSON.parse(retrieve)); 
+console.log(JSON.parse(retrieve));  
