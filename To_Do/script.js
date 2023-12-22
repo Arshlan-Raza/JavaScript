@@ -6,6 +6,7 @@ const filterOption = document.querySelector('.filter-todo')
 
 
 //event listeners
+document.addEventListener('DOMContentLoaded',getTodos);
 todoButton.addEventListener('click',addTodo);
 todoList.addEventListener('click',deleteCheck);
 filterOption.addEventListener('click',filterTodo);
@@ -52,6 +53,7 @@ function deleteCheck(e){
         if(item.classList[0] === "trash-btn"){
             const todo = item.parentElement;
             todo.classList.add("fall");
+            removeLocalTodo(todo);
             todo.addEventListener('transitionend',function(){
                 todo.remove();
             });
@@ -104,6 +106,7 @@ function saveLocalTodos(todo){
 }
 
 function getTodos(){
+
     let todos;
     //check if we already have something 
     if(localStorage.getItem('todos') === null){
@@ -122,7 +125,7 @@ function getTodos(){
         newTodo.innerText = todo;
         newTodo.classList.add('todo-item');
         todoDiv.appendChild(newTodo);
-        
+
         //check mark button 
         const completedButton = document.createElement('button');
         completedButton.innerHTML ='<i class="fa-solid fa-check"></i>'; 
@@ -139,3 +142,17 @@ function getTodos(){
         todoList.appendChild(todoDiv);
     })
 }
+
+function removeLocalTodo(todo){
+    let todos;
+    //check if we already have something 
+    if(localStorage.getItem('todos') === null){
+        todos = [];
+    }
+    else{
+        todos = JSON.parse(localStorage.getItem('todos'));
+    }
+    const todoIndex = todo.children[0].innerText;
+    todos.splice(todos.indexOf(todoIndex),1);
+    localStorage.setItem('todos',JSON.stringify(todos));
+} 
