@@ -57,3 +57,28 @@ const highRatingTitles = highRating.map(function(game){
 console.log(highRatingTitles);
 
 */
+
+/*
+some and every 
+const games = [
+    {title:"Mass Effect" , rating :9.5},
+    {title:"League of Legends" , rating :5},
+    {title:"Last of Us" , rating :10},
+    {title:"God of War" , rating :10},
+    {title:"WWE 2k20" , rating :4},
+]
+// every  --> saare k saare 
+// const checkRating = games.every(function(game){
+//     return game.rating > 9;
+// })
+
+// console.log(checkRating);
+
+// some --> kuch 
+const checkRating = games.some(function(game){
+    return game.rating > 9;
+});
+
+console.log(checkRating);
+
+*/
